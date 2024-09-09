@@ -21,7 +21,7 @@ int main ()
     {
         fgets (&(onegin_text[number_line][0]), symbol_max_count, onegin_file);
 
-        printf ("%s ", &onegin_text[number_line][0]);
+        printf ("%s", &onegin_text[number_line][0]);
 
     }  
 
@@ -39,10 +39,12 @@ int main ()
     }
     printf ("\n\n\n");
 
-    for (int number_line  = 0; number_line < line_max_count; number_line++)
+    for (int number_line = 1; number_line < line_max_count+1; number_line++)
     {
-        printf ("%s ", &onegin_text[number_line][0]);
+        printf ("%s", number_line, &onegin_text[number_line][0]);
     }
+
+    printf("\n\n");
 
     return 0;
 }
